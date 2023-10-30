@@ -20,7 +20,7 @@ Place all design journey images inside the "design-plan" folder and then link th
 ### Project (Milestone 1)
 > Which project will you add interactivity to enhance the site's functionality?
 
-Project (TODO: 1 or 2)
+Project 2
 
 
 ### Audience (Milestone 1)

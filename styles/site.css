@@ -1,0 +1,257 @@
+
+/* ----- header ----- */
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #3c1518;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 10vh;
+}
+
+.pagetitle {
+    margin-top: 2%;
+    font-size: 3.2vw;
+    color: #C26C4D;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 9%;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 30px;
+    font-size: 1.2vw;
+    color: #C26C4D;
+}
+
+.navbar a:hover {
+    background-color: #C26C4D;
+    color: #3c1518;
+}
+
+/* ----- footer ----- */
+
+footer {
+    display: flex;
+    background-color: #3c1518;
+    padding: 8px;
+}
+
+footer li {
+    list-style: none;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color:#C26C4D;
+}
+
+footer h4 {
+    padding-top: 5px;
+    margin-left: 30px;
+    font-size: 18pt;
+    color: #C26C4D;
+}
+
+/* ----- page sections ----- */
+
+body {
+    font-family: tahoma, georgia, verdana;
+    background-color: #eec170;
+    color: #69140e;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0%;
+    word-spacing: 2px;
+}
+
+aside {
+    order: 2;
+    background-color: #69140e;
+    color: #eec170;
+    padding: 2%;
+    max-width: 15%;
+    min-width: 15%;
+}
+
+.main {
+    display: flex;
+    flex-direction:column;
+}
+
+/* ----- text ----- */
+
+.abouthist {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.text {
+    padding: 10px;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: brush script mt;
+    font-size: 20pt;
+}
+
+aside p {
+    text-indent: 40px;
+    line-height: 25px;
+}
+
+aside h2 {
+    text-align: center;
+    font-size: 26pt;
+}
+
+#driving {
+    max-width: 700px;
+}
+
+#dining {
+    max-width: 700px;
+}
+
+#paymentinfo {
+    background-color: #a44a3f;
+    color: #eec170;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lists {
+    padding: 30px;
+}
+
+.lists h2 {
+    text-align: center;
+    font-size: 26pt;
+    border-top: 3px solid #69140e;
+    padding-top: 50px;
+}
+
+.lists p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#date {
+    text-indent: 0px;
+}
+
+.map h2 {
+    text-align: center;
+    font-size: 25pt;
+    border-bottom: 2px solid #69140e;
+    padding-bottom: 20px;
+}
+
+/* ----- images ----- */
+
+img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+/* ----- media queries ----- */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        margin-bottom: auto;
+    }
+
+    .logo {
+        max-height: 15vh;
+    }
+
+    .pagetitle {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        line-height: 200%;
+        margin-left: -7%;
+        margin-top: -2%;
+    }
+
+    .navbar a {
+        text-align: center;
+        width: 100%;
+        padding: 1%;
+        margin: 7%;
+        font-size: 4vw;
+
+    }
+
+    .page {
+        flex-direction: column;
+        margin: 0%;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    aside {
+        order: 0;
+        width: 92%;
+        min-width: auto;
+        max-width: none;
+        padding-left: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #vendors {
+        order: 2;
+    }
+
+    .main {
+        order: 1;
+    }
+
+    .abouthist {
+        flex-direction: column;
+    }
+
+    .map h2 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 2560px) {
+    .body {
+        max-width: 2560px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
