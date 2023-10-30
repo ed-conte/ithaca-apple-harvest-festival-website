@@ -27,7 +27,7 @@ Project 2
 > Briefly explain your site's audience. (1-2 sentences)
 > Be specific and justify why this audience is a **cohesive** group.
 
-TODO: site's _cohesive_ audience
+The audience for the Ithaca Apple Harvest Festival Website is Ithaca area residents. This cohesive audience includes Cornell undergrad students and graduate students, and does not discriminate based on location, whether that be North campus, West campus, or off campus. Ithaca college students and Ithaca high school students are also included. Additionally, this audience accounts for Ithaca town residents and university professors who do not fall under the student designation.
 
 
 ### Audience's Goals (Milestone 1)
@@ -35,9 +35,47 @@ TODO: site's _cohesive_ audience
 > Simply list each goal. No need to include the "Design Ideas and Choices", etc.
 > You may adjust the goals if necessary.
 
-- TODO: goal 1
-- TODO: goal 2
-- TODO: ...
+**Goal 1: Find which vendors are visiting**
+
+- **Design Ideas and Choices** _How will you meet those goals in your design?_
+  - I will include a page for visiting vendors
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  - multiple participents expressed that they were interested in looking through which vendors were attending the event so they could plan their visit, and find the donuts.
+
+**Goal 2: Look at the event map**
+
+- **Design Ideas and Choices** _How will you meet those goals in your design?_
+  - I will include a map of the event.
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  - Including a map will allow users to locate themselves at the festival and find possible locations of vendors.
+
+**Goal 3: Find the date and time of the festival**
+
+- **Design Ideas and Choices** _How will you meet those goals in your design?_
+  - The time, date, and locaton of the festival will be clearly dislpayed.
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  - participents mentioned looking for the where and when of the festival, which will be especially beneficial for new participants.
+
+**Goal 4: Experience the autumn/fall aesthetic**
+
+- **Design Ideas and Choices** _How will you meet those goals in your design?_
+  - I will include content and images that depict the vibe of the festival, and the site colors and font will communicate this aesthetic
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  - It is important for users to understand the vibe and aesthetic of the festival before attending. Participants mentioned interest in fall and autumn expressing colors and smells that they attribute to the season and festival.
+
+**Goal 5: which payment methods are accepted?**
+
+- **Design Ideas and Choices** _How will you meet those goals in your design?_
+  - I will add a small disclaimer that states payment methods vary by vendor.
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  - Users are unsure whether they should bring cash or card to the festival.
+
+**Goal 6: transportation information**
+
+- **Design Ideas and Choices** _How will you meet those goals in your design?_
+  - I will include transportation information on an accessable page. This information will include parking information as well as public transportation and bussing.
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  - transportation methods will vary among participants, and parking and bussing information will facilitate participants' attendance at the fesiival.
 
 
 ## Interactivity Design (Milestone 1)
