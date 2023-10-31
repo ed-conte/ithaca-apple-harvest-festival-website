@@ -85,9 +85,20 @@ The audience for the Ithaca Apple Harvest Festival Website is Ithaca area reside
 > Briefly explain each idea and provide a brief rationale for how the interactivity enhances the site's functionality for the audience. (1 sentence)
 > Note: You may find it easier to sketch for brainstorming. That's fine too. Do whatever you need to do to explore your ideas.
 
-- TODO: idea 1
-- TODO: idea 2
-- TODO: ...
+- Idea 1: date and time
+
+  the date, time, and location will be displayed in a modal when the website is opened prompting user input.
+
+  Introducing a modal that displays the date, time, and location of the festival would facilitate meeting user goals. This implementation would assist participants in effectively planning ahead and attending the festival. Including this information in a modal isolates this information from the page so users do not have to search for it.
+
+- Idea 2: map
+
+  The festival map will be displayed in a modal when the user enters the "Vendors" page separating it from the other content on the page and highlighting its importance. A user can click out of the map at any time. During the user research process, a primary user goal was locating vendors on the map. Including the map in a modal would fulfill that user goal, and facilitate concise website navigation.
+
+- Idea 3: photo carousel
+
+  on the homepage there exists a large decorative image, changing that image to a carousel where users can look through a group of images of the festival would further users' understanding of the festival's imagery. Users expressed interest in engaging with content that fits into the fall aesthetic when attending the festival during interviews. Including a carousel of images that depict the festival decor and
+
 
 
 ### Interactivity Design Ideation (Milestone 1)
@@ -119,8 +130,9 @@ TODO: final design sketch(es)
 > Provide a brief rationale explaining how your proposed interactivity addresses the goals of your site's audience.
 > This should be about a paragraph. (2-4 sentences)
 
-TODO: design rationale
+The primary purpose of implementing a map modal on the "Vendor" page is to provide visitors with a visual representation of vendor locations, making it easier for them to navigate the event and plan their visit. This interactive design enhances the user experience by allowing attendees to pinpoint specific lanes that house the vendors they wish to visit, understand the event's layout, and strategize their route. For the site's intended audience, which includes Ithaca area residents both first-time attendees and returning visitors, this feature addresses their need for efficient navigation and maximizes their enjoyment of the festival.
 
+Implementing a date, time, and location modal on the homepage serves as an immediate and concise reminder of the event's schedule, ensuring that visitors are well-informed and can plan accordingly. By prominently displaying this information, the site caters to its audience's primary need: understanding where and when the festival occurs. For potential attendees, especially those juggling other commitments, having easy access to the date and time details reduces the likelihood of scheduling conflicts and enhances their overall event participation.
 
 ## Interactivity Implementation Plan (Milestone 1)
 
@@ -146,13 +158,17 @@ TODO: planning sketch(es)
 Open the modal:
 
 ```
-TODO: pseudocode
+when user enters the vendor page
+show vendor map above page content
+dim content behind large vendor map
 ```
 
 Close the modal:
 
 ```
-TODO: pseudocode
+when user clicks outside the vendor map (dimmed area)
+un-dim vendor page
+hide large vendor map
 ```
 
 **Hamburger menu pseudocode:**
@@ -160,21 +176,32 @@ TODO: pseudocode
 Pseudocode to show/hide (toggle) the navigation menu (narrow screens):
 
 ```
-TODO: pseudocode
+when the user clicks on the hamburger menu icon
+change navigation list flexbox to row
+move the navigation list below the site title
+reveal navigation list below title
+when user clicks hamburger menu icon while its open
+hide navigation list
 ```
+
 
 Pseudocode to hide the hamburger button and show the navigation bar when the window is resized too wide:
 
 ```
-TODO: pseudocode
+when user widens the screen past --px
+hide hamburger menu icon
+change navigation list flexbox to column
+move the navigation list inline with the site title
+show navigation list
 ```
 
 Pseudocode to show the hamburger button and hide the navigation menu when the window is resized too narrow:
 
 ```
-TODO: pseudocode
+when the user narrows the screen past --px
+show the hamburger menu icon
+hide navigation list
 ```
-
 
 ## Grading (Final Submission)
 
