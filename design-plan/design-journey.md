@@ -87,9 +87,7 @@ The audience for the Ithaca Apple Harvest Festival Website is Ithaca area reside
 
 - Idea 1: date and time
 
-  the date, time, and location will be displayed in a modal when the website is opened prompting user input.
-
-  Introducing a modal that displays the date, time, and location of the festival would facilitate meeting user goals. This implementation would assist participants in effectively planning ahead and attending the festival. Including this information in a modal isolates this information from the page so users do not have to search for it.
+  The date, time, and location will be displayed in a modal when the website is opened, prompting user input. Introducing a modal that displays the date, time, and location of the festival would facilitate meeting user goals. This implementation would assist participants in effectively planning ahead and attending the festival. Including this information in a modal isolates this information from the page so users do not have to search for it.
 
 - Idea 2: map
 
@@ -106,8 +104,11 @@ The audience for the Ithaca Apple Harvest Festival Website is Ithaca area reside
 > Sketch at least two iterations of the modal and at least two iterations of the hamburger menu interactivity.
 > Annotate each sketch explaining what happens when a user takes an action. (e.g. When user clicks this, something else appears.)
 
-TODO: design sketches
+**Modal Design Sketches**
+![Modal design sketch2](design-images/IMG_0228.jpg)
 
+**Hamburger Menu Design Sketches**
+![Burger design sketch1](/design-plan/design-images/IMG_0231.jpg)
 
 ### Final Interactivity Design Sketches (Milestone 1)
 > Create _polished_ sketch(es) (it's still a sketch, but with a little more care taken to communicate ideas clearly to the graders) to plan your interactivity.
@@ -118,12 +119,12 @@ TODO: design sketches
 
 **Modal design sketches:**
 
-TODO: final design sketch(es)
+![Modal design sketch1](/design-plan/design-images/IMG_0230.jpg)
+![Modal design sketch2](/design-plan/design-images/IMG_0229.jpg)
 
 **Hamburger drop-down navigation menu design sketches:**
 
-TODO: final design sketch(es)
-
+![Burger design sketch](/design-plan/design-images/IMG_0233.jpg)
 
 ### Interactivity Rationale (Milestone 1)
 > Describe the purpose of your proposed interactivity.
@@ -132,7 +133,7 @@ TODO: final design sketch(es)
 
 The primary purpose of implementing a map modal on the "Vendor" page is to provide visitors with a visual representation of vendor locations, making it easier for them to navigate the event and plan their visit. This interactive design enhances the user experience by allowing attendees to pinpoint specific lanes that house the vendors they wish to visit, understand the event's layout, and strategize their route. For the site's intended audience, which includes Ithaca area residents both first-time attendees and returning visitors, this feature addresses their need for efficient navigation and maximizes their enjoyment of the festival.
 
-Implementing a date, time, and location modal on the homepage serves as an immediate and concise reminder of the event's schedule, ensuring that visitors are well-informed and can plan accordingly. By prominently displaying this information, the site caters to its audience's primary need: understanding where and when the festival occurs. For potential attendees, especially those juggling other commitments, having easy access to the date and time details reduces the likelihood of scheduling conflicts and enhances their overall event participation.
+<s>Implementing a date, time, and location modal on the homepage serves as an immediate and concise reminder of the event's schedule, ensuring that visitors are well-informed and can plan accordingly. By prominently displaying this information, the site caters to its audience's primary need: understanding where and when the festival occurs. For potential attendees, especially those juggling other commitments, having easy access to the date and time details reduces the likelihood of scheduling conflicts and enhances their overall event participation.</s>
 
 ## Interactivity Implementation Plan (Milestone 1)
 
@@ -142,11 +143,12 @@ Implementing a date, time, and location modal on the homepage serves as an immed
 
 **Modal planning sketches:**
 
-TODO: planning sketch(es)
+![final modal sketch](/design-plan/design-images/IMG_0227.jpg)
 
 **Hamburger drop-down navigation menu planning sketches:**
 
-TODO: planning sketch(es)
+![final hamburger menu sketch](/design-plan/design-images/IMG_0232.jpg)
+
 
 
 ### Interactivity Pseudocode Plan (Milestone 1)
@@ -158,17 +160,15 @@ TODO: planning sketch(es)
 Open the modal:
 
 ```
-when user enters the vendor page
-show vendor map above page content
-dim content behind large vendor map
+when user clicks on map image
+  unhide vendor map overlay
 ```
 
 Close the modal:
 
 ```
-when user clicks outside the vendor map (dimmed area)
-un-dim vendor page
-hide large vendor map
+when user clicks outside the vendor map
+  hide large vendor map
 ```
 
 **Hamburger menu pseudocode:**
@@ -177,11 +177,11 @@ Pseudocode to show/hide (toggle) the navigation menu (narrow screens):
 
 ```
 when the user clicks on the hamburger menu icon
-change navigation list flexbox to row
-move the navigation list below the site title
-reveal navigation list below title
-when user clicks hamburger menu icon while its open
-hide navigation list
+  change navigation list flexbox to row
+  move the navigation list below the site title
+  reveal navigation list below title
+  when user clicks hamburger menu icon while its open
+  hide navigation list
 ```
 
 
@@ -189,18 +189,18 @@ Pseudocode to hide the hamburger button and show the navigation bar when the win
 
 ```
 when user widens the screen past --px
-hide hamburger menu icon
-change navigation list flexbox to column
-move the navigation list inline with the site title
-show navigation list
+  hide hamburger menu icon
+  change navigation list flexbox to column
+  move the navigation list inline with the site title
+  show navigation list
 ```
 
 Pseudocode to show the hamburger button and hide the navigation menu when the window is resized too narrow:
 
 ```
 when the user narrows the screen past --px
-show the hamburger menu icon
-hide navigation list
+  show the hamburger menu icon
+  hide navigation list
 ```
 
 ## Grading (Final Submission)

@@ -173,6 +173,12 @@ img {
     height: auto;
 }
 
+/* ----- Interactivity ----- */
+
+.hidden {
+    display: none;
+}
+
 /* ----- media queries ----- */
 
 @media (max-width: 900px) {
