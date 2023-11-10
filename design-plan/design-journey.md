@@ -209,7 +209,7 @@ when the user narrows the screen past --px
 > Explain how your design effectively uses affordances, visibility, feedback, and familiarity.
 > Write a paragraph (3-5 sentences)
 
-TODO: interactivity rationale
+The hamburger menu uses affordances through the icon's button functionality. The icon implies that the user may click it to reveal more content. The icon uses familiarity as it is a standard symbol for menus in website development, especially on mobile interfaces, in which users are accustomed to interacting with. On narrow screens where navigation options may be limited, the icon remains prominent, indicating where users can access more information, thus using visibility. When users interact with the hamburger menu by clicking it, the immediate expansion of the navigation menu provides visual feedback for their action. The map hints that it can be interacted with through a change in the cursor. Modals are a common design pattern for displaying additional content or expanding images without navigating away from the current page, which is familiar to users. The modal forces the map into the foreground while dimming the less relevant information in the background, making the interactive element visible and focusing the user's attention. Upon clicking the map, the page's dimming and appearance of the enlarged map provide immediate feedback that the user's action has been recognized.
 
 
 ### Tell Us What to Grade (Final Submission)
@@ -218,28 +218,25 @@ TODO: interactivity rationale
 > Tell us where (what pages) we can find your interactivity and how to use it.
 > **We will only grade what you list here;** if it's not listed, we won't grade it.
 
-TODO: what should we grade
-
+Please grade the interactivity of the map on the vendors.html page. To use this interactivity, click the map to bring up the modal and click the X button to close it. Additionally, please grade the hamburger menu on all of the html pages; to use the menu please resize your browser window to less than 900 pixels wide, and click on the hamburger menu icon to bring up the navigation menu. To close the menu, click the menu icon again.
 
 ### Collaborators (Final Submission)
 > List any persons you collaborated with on this project.
 
-TODO: list your collaborators
-
+Pedro Arruda
 
 ### Reference Resources (Final Submission)
 > Please cite any external resources you referenced in the creation of your project.
 > (i.e. W3Schools, StackOverflow, Mozilla, etc.)
 
-TODO: list reference resources
-
+W3Schools, Mozilla, Youtube
 
 ### Self-Reflection (Final Submission)
 > This was the first project in this class where you coded some JavaScript. What did you learn from this experience?
 
-TODO: self-reflection
+Despite my previous coding experience with Python and Swift, Javascript was difficult for me to implement. I quickly grasped how to write in javascript with the jquery snippets, which fit together like puzzle pieces, but balancing the javascript functionality with the media queries I implemented in CSS was a challenge that I did not expect. Many of the classes seemed to clash when I tried to implement the interactivity, and some quickly broke. I overcame this by carefully reading through my CSS file, finding the corresponding classes and IDs in the html, and resolving the conflicts. I asked for some help when I did not understand which classes were being overwritten by others.
 
 
 > Take some time here to reflect on how much you've learned since you started this class. It's often easy to ignore our own progress. Take a moment and think about your accomplishments in this class. Hopefully you'll recognize that you've accomplished a lot and that you should be very proud of those accomplishments!
 
-TODO: self-reflection
+This assignment boosted my confidence in implementing functionality and interactivity to HTML and CSS based sites. I feel as though it inspired me to seek answers to many of my questions from the previous assignments that I still had; namely on class and ID interactions and how different classes can overwrite each other. Implementing javascript on this site inspired me to return to my previous websited and add interactivity to them as it was the missing puzzle piece to make those sites more appealing to users.

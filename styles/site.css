@@ -19,21 +19,25 @@ header {
     color: #C26C4D;
 }
 
-.navbar {
+#menuicon {
+    display: flex;
+}
+
+#navbar {
     display: flex;
     justify-content: space-around;
     list-style: none;
     margin-top: 9%;
 }
 
-.navbar a {
+#navbar a {
     text-decoration: none;
     padding: 30px;
     font-size: 1.2vw;
     color: #C26C4D;
 }
 
-.navbar a:hover {
+#navbar a:hover {
     background-color: #C26C4D;
     color: #3c1518;
 }
@@ -81,6 +85,7 @@ body {
 }
 
 aside {
+    z-index: 1;
     order: 2;
     background-color: #69140e;
     color: #eec170;
@@ -175,9 +180,56 @@ img {
 
 /* ----- Interactivity ----- */
 
-.hidden {
+#map {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #map:hover {opacity: 0.7;}
+
+  #modalid {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  #modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #burgerbutton {
     display: none;
-}
+  }
+
 
 /* ----- media queries ----- */
 
@@ -200,7 +252,14 @@ img {
         font-size: 8vw;
     }
 
-    .navbar {
+    #burgerbutton {
+        display: flex;
+        width: 40px;
+        height: auto;
+    }
+
+    .navmenu {
+        display: flex;
         flex-direction: column;
         height: auto;
         text-align: center;
@@ -209,13 +268,12 @@ img {
         margin-top: -2%;
     }
 
-    .navbar a {
+    .navmenu a {
         text-align: center;
         width: 100%;
-        padding: 1%;
-        margin: 7%;
-        font-size: 4vw;
-
+        padding: 1% !important;
+        margin: 30px !important;
+        font-size: 4vw !important;
     }
 
     .page {
@@ -260,4 +318,13 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.hidden *{
+    display: none !important;
 }

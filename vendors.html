@@ -23,7 +23,11 @@
 
             <!-- Navigation Bar -->
             <nav>
-                <ul class="navbar">
+                <!-- Source: (https://commons.wikimedia.org/wiki/File:Hamburger_icon_white.svg) -->
+                <button class="button" id="burgerbutton">
+                    <img id="menuicon" src="images/burger.svg" alt="burger icon">
+                </button>
+                <ul id="navbar">
                     <li><a href="index.html">Homepage</a></li>
                     <li><a href="vendors.html">Vendors</a></li>
                     <li><a href="transportation.html">Transportation</a></li>
@@ -36,11 +40,6 @@
     <div class="page">
 
         <div class="main">
-
-            <div class="hidden">
-                <!-- class:"<div class="img-window"></div>"-->
-                <img class="mapimg" src="images/apple-harvest-map.svg" alt="map">
-            </div>
 
             <picture>
                 <img src="images/vendor-stall.jpg" alt="apple-basket">
@@ -55,8 +54,13 @@
             <figure class="map">
                 <!-- Source: (Instructor Provided) Kyle Harms -->
                 <h2>Festival Map</h2>
-                    <img src="images/apple-harvest-map.svg" alt="map">
+                    <img id="map" src="images/apple-harvest-map.svg" alt="map">
             </figure>
+
+            <div id="modalid" class="hidden">
+                <span class="close">&times;</span>
+                <img id="modal-content" src="images/apple-harvest-map.svg" alt="mapmodel">
+            </div>
 
             <div class="text">
                 <p>
@@ -174,6 +178,11 @@
             <li><a href="https://www.cityofithaca.org/243/Parking">For additional downtown parking</a></li>
         </ul>
     </footer>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/burger.js"></script>
+
 </body>
 
 </html>
